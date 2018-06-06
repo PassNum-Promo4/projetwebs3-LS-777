@@ -1,0 +1,131 @@
+section{max-width: 100%;}
+
+
+.searchBox{
+  background: linear-gradient(20deg,#20a0e9,#1f3d55); 
+
+}
+
+.bb-blue{
+  border-bottom: 0.13vh solid #1f3d55;
+}
+
+.bt-blue{
+  border-top: 0.13vh solid #1f3d55;
+}
+
+.btn-proj:hover{
+  color:white;
+}
+
+footer{
+  width: 100%;
+}
+
+.bg-sec{
+  background: linear-gradient(20deg,#8fcff5,#20a0e9);
+}
+
+.project-img{
+  height: 66vh;
+}
+
+.short-popular-category-list {
+  margin-top: 40px;
+}
+
+.short-popular-category-list h2 {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+}
+
+.short-popular-category-list ul {
+  margin-top: 20px;
+}
+
+.short-popular-category-list ul li {
+  margin: 0 2px;
+}
+
+.short-popular-category-list ul li a {
+  border: 1px solid #1f3d55;
+  border-radius: 7%;
+  background-color: #f6ae01;
+  color: #1f3d55;
+  font-weight: bold;
+  padding: 4px 10px;
+  font-size: 12px;
+}
+
+
+.short-popular-category-list2 ul li a {
+  border: 1px solid #1f3d55;
+  border-radius: 7%;
+  background-color: #f6ae01;
+  color: #1f3d55;
+  font-weight: bold;
+  padding: 4px 10px;
+  font-size: 12px;
+}
+
+
+
+.short-popular-category-list ul li a i {
+  margin-right: 2px;
+}
+
+
+/* END HEADER  */
+
+
+
+/* PRESENTATION PART */
+
+.hr-blue {
+  width: 5%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 3px solid rgba(31, 61, 85, 1);
+}
+
+
+
+.project{
+  background: linear-gradient(20deg,#8fcff5,#20a0e9);
+}
+
+
+.card-end{
+    background:  rgba(31, 61, 85, 1);
+}
+
+.proj-date{
+    color:#f6ae01;
+}
+
+.btn-proj {
+  border-color: #1f3d55 !important;
+  background: limegreen !important;
+  color: rgba(31, 61, 85, 1);
+}
+
+.short-popular-category-list ul li p {
+  border: 1px solid #1f3d55;
+  border-radius: 7%;
+  background-color: #f6ae01;
+  color: #1f3d55;
+  font-weight: bold;
+  padding: 4px 10px;
+  font-size: 12px;
+}
+
+
+/* END PRESENTATION */
+
+
+
+
+  /* END EVENTS */

@@ -1,0 +1,29 @@
+
+.nav-link:focus, .nav-link:hover {
+    color:#f6ae01 !important;
+}
+
+
+
+/* change the background color */
+.navbar-custom {
+        height: 66px;
+        width: 100wh;
+        color: white;
+        border-bottom: 0.33vh solid #1f3d55;
+        background: linear-gradient(20deg,#1f3d55,#22668e,#1f3d55); 
+        
+}
+/* change the brand and text color */
+    .navbar-custom .navbar-brand{
+    color:#f6ae01;
+    font-weight:bold
+} 
+
+.logo{
+    border: 1.5px solid #f6ae01;
+
+}
+.navbar-custom .nav-item.active .nav-link{
+    color: #f6ae01 !important;
+}

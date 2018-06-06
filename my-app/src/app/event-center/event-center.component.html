@@ -1,0 +1,78 @@
+<!-- get a CRUD projects interface HERE -->
+<!-- and  a list projects HERE-->
+<div class="text-center my-5 py-5">
+  <h2 class="text-center text-uppercase font-weight-bold"> Event-center</h2>
+  <hr class="hr-blue">
+  <div class="mx-auto">
+      <p class="font-weight-bold text-center my-5">Click to switch on add project mode!</p>
+      <button (click)="addMode()" class="my-2 btn-lg btn-success font-weight-bold" type="button">Add a project</button>
+  </div>
+</div>
+
+
+<div class="row">
+
+  <!-- add & edit a project forms-->
+  <div class="col-lg-6 col-md-10 col-sm-11 col-xs-12 d-inline-block mx-auto my-auto">
+
+    <!-- display the add project form only if the corresponding button iz clicked-->
+    <div *ngIf="onAddMode" class="col-lg-10 col-md-10 col-sm-11 col-xs-12 mx-auto mb-5">
+      <div class="text-center my-5 py-5">
+        <h2 class="text-center text-uppercase font-weight-bold"> Create a new project</h2>
+        <hr class="hr-blue">
+      </div>
+      <div class="card form-wh">
+        <div class="card-header form-header">
+          <h3 class="mb-0">Add project</h3>
+        </div>
+
+        <div class="card-body add-project">
+          <div class="text-right mb-5">
+            <h5 class="float-right d-block blink">Add a project to the wall.</h5>
+          </div>
+          <div class="form well">
+            <div class="form-group">
+              <label>Name</label>
+              <input type="text" name="name" class="form-control rounded-0" required [(ngModel)]="eventModel.name">
+            </div>
+            <div class="form-group">
+              <label>Description</label>
+              <input type="text" name="description" rows="5" class="form-control rounded-0" [(ngModel)]="eventModel.description">
+            </div>
+            <div class="form-group">
+              <label>Category</label>
+              <input type="text" name="category" class="form-control rounded-0" [(ngModel)]="eventModel.category">
+            </div>
+            <div class="form-group">
+              <label>Contact</label>
+              <input type="text" name="contact" class="form-control rounded-0" [(ngModel)]="eventModel.contact">
+            </div>
+            <div class="form-group">
+              <label>Date</label>
+              <input type="text" name="date" class="form-control rounded-0" [(ngModel)]="eventModel.date">
+            </div>
+
+            <div class="form-group mx-auto mt-5">
+              <button type="submit" (click)="addEvent()" class="btn btn-success btn-lg float-right">Save</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- edit project details form-->
+    <app-event-details *ngIf="_eventService.selectedEvent"></app-event-details>
+    <!-- please check  -->
+  </div>
+
+  <!-- displayin the list of projects, and assign it to the property selected project-->
+  <div class="col-lg-6 col-sm-8 d-inline-block mx-auto my-auto projects-list-box">
+
+    <h3 class="text-center text-uppercase font-weight-bold"> Projects List</h3>
+    <hr class="hr-blue">
+
+    <app-event-list></app-event-list>
+  </div>
+
+</div>
